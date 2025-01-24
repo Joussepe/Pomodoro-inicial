@@ -1,4 +1,4 @@
-let workTime = 5 * 60; // 25 minutos en segundos
+let workTime = 25 * 60; // 25 minutos en segundos
 let breakTime = 5 * 60; // 5 minutos en segundos
 let timeLeft = workTime;
 let timerInterval;
