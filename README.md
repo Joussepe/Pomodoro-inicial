@@ -4,7 +4,7 @@
 #### **Objetivo**
 Desarrollar un temporizador Pomodoro que permita al usuario gestionar intervalos de trabajo y descanso. El temporizador debe incluir una interfaz atractiva y funcionalidades básicas como iniciar, pausar y reiniciar.
 ### **Desarollador **
-- **Apellidos y nombres:** 
+- **CAMARGO AMBICHO, Joussepe Josué** 
 #### **Requisitos Funcionales**
 1. **Interfaz de Usuario (HTML y CSS)**:
    - Mostrar un temporizador grande que indique el tiempo restante en formato `MM:SS`.
