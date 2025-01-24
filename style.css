@@ -31,6 +31,12 @@ h1{
     color: #555;
 }
 
+.buttons{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
 button {
     padding: 10px 20px;
     margin: 5px;
