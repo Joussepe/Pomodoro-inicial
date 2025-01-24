@@ -53,6 +53,7 @@ function updateDisplay() {
     const seconds = timeLeft % 60;
     timerDisplay.textContent = `${minutes}:${seconds.toString().padStart(2, '0')}`;
     statusDisplay.textContent = isWorking ? 'Tiempo de Trabajo' : 'Tiempo de Descanso';
+    document.body.style.backgroundColor = isWorking ? '#f4f4f4' : '#d4edda';
 }
 
 startButton.addEventListener('click', startTimer);
