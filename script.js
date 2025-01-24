@@ -20,6 +20,9 @@ function startTimer() {
 
 function pauseTimer() {
     clearInterval(timerInterval);
+    timerInterval = null;
+    startButton.textContent = 'Reanudar';
+    startButton.disabled = true;
 }
 
 function resetTimer() {
