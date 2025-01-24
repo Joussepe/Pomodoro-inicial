@@ -1,7 +1,7 @@
-let workTime = 25 * 60; // 25 minutos en segundos
+let workTime = 5 * 60; // 25 minutos en segundos
 let breakTime = 5 * 60; // 5 minutos en segundos
 let timeLeft = workTime;
-let timerInterval = null;
+let timerInterval;
 let isWorking = true;
 
 const timerDisplay = document.getElementById('timer');
@@ -42,8 +42,9 @@ function updateTimer() {
         clearInterval(timerInterval);
         isWorking = !isWorking;
         timeLeft = isWorking ? workTime : breakTime;
-        notifyIntervalChange();
+
         startTimer();
+        console.log(`Intervalo cambiado: ${isWorking ? 'Trabajo' : 'Descanso'}, tiempo restante: ${timeLeft}`);
     }
     updateDisplay();
 }
@@ -59,3 +60,5 @@ function updateDisplay() {
 startButton.addEventListener('click', startTimer);
 pauseButton.addEventListener('click', pauseTimer);
 resetButton.addEventListener('click', resetTimer);
+
+updateDisplay();
