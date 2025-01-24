@@ -39,11 +39,8 @@ function updateTimer() {
     if (timeLeft > 0) {
         timeLeft--;
     } else {
-        clearInterval(timerInterval);
         isWorking = !isWorking;
         timeLeft = isWorking ? workTime : breakTime;
-
-        startTimer();
         console.log(`Intervalo cambiado: ${isWorking ? 'Trabajo' : 'Descanso'}, tiempo restante: ${timeLeft}`);
     }
     updateDisplay();
