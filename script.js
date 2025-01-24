@@ -42,6 +42,7 @@ function updateTimer() {
         clearInterval(timerInterval);
         isWorking = !isWorking;
         timeLeft = isWorking ? workTime : breakTime;
+        notifyIntervalChange();
         startTimer();
     }
     updateDisplay();
