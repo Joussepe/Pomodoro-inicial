@@ -27,8 +27,11 @@ function pauseTimer() {
 
 function resetTimer() {
     clearInterval(timerInterval);
+    timerInterval = null;
     isWorking = true;
     timeLeft = workTime;
+    startButton.textContent = 'Iniciar';
+    startButton.disabled = false;
     updateDisplay();
 }
 
