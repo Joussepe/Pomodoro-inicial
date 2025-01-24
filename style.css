@@ -24,6 +24,13 @@ h1{
     font-weight: bold;
     margin: 20px 0;
 }
+
+#status{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
 button {
     padding: 10px 20px;
     margin: 5px;
