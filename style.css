@@ -58,3 +58,8 @@ button:hover{
     cursor: pointer;
     transition: background 0.3s ease;
 }
+
+button:disabled{
+    background: #ccc;
+    cursor: not-allowed;
+}
