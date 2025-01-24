@@ -1,7 +1,7 @@
 let workTime = 25 * 60; // 25 minutos en segundos
 let breakTime = 5 * 60; // 5 minutos en segundos
 let timeLeft = workTime;
-let timerInterval;
+let timerInterval = null;
 let isWorking = true;
 
 const timerDisplay = document.getElementById('timer');
@@ -11,7 +11,11 @@ const pauseButton = document.getElementById('pause');
 const resetButton = document.getElementById('reset');
 
 function startTimer() {
-    timerInterval = setInterval(updateTimer, 1000);
+    if (!timerInterval){
+        timerInterval = setInterval(updateTimer, 1000);
+        startButton.textContent = 'En marcha...'
+        startButton.disabled = true;
+    }
 }
 
 function pauseTimer() {
